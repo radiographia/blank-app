@@ -43,7 +43,7 @@ if st.button("🚀 Шаг 2: Начать структурирование") and
             
             # 3. Request payload for Free Gemini on OpenRouter
             payload = {
-                "model": "google/gemini-2.5-flash:free",
+                "model": "google/gemini-2.5-flash-lite-preview-09-2025",
                 "messages": [
                     {
                         "role": "user",

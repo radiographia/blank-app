@@ -68,7 +68,7 @@ if st.button("🚀 Шаг 2: Начать структурирование") and
             
             # 4. API Request Execution
             with st.spinner("🔄 ИИ слушает аудиозапись и заполняет карту... Пожалуйста, подождите."):
-                res = requests.post("https://openrouter.ai", headers=headers, json=payload)
+                res = requests.post("https://openrouter.ai/api/v1/chat/completions", headers=headers, json=payload)
                 
                 if res.status_code == 200:
                     response_data = res.json()
